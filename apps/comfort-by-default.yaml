@@ -5,11 +5,10 @@ metadata:
 spec:
   project: default
   source:
-    chart: itzg/minecraft
+    chart: minecraft
     repoURL: https://itzg.github.io/minecraft-server-charts/
     targetRevision: 4.14.0
     helm:
-      releaseName: comfort-by-default
       values: |
         env:
           EULA: true
