@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: comfort-by-default
+spec:
+  project: default
+  source:
+    chart: itzg/minecraft
+    repoURL: https://itzg.github.io/minecraft-server-charts/
+    targetRevision: 4.14.0
+    helm:
+      releaseName: comfort-by-default
+      valueFiles:
+      - values.yaml
+  destination:
+    server: "https://kubernetes.default.svc"
