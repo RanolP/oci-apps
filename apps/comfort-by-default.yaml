@@ -12,5 +12,6 @@ spec:
       values: |
         env:
           EULA: true
+          TYPE: "PAPER"
   destination:
     server: "https://kubernetes.default.svc"
