@@ -10,7 +10,8 @@ spec:
     targetRevision: 4.14.0
     helm:
       releaseName: comfort-by-default
-      valueFiles:
-      - values.yaml
+      values: |
+        env:
+          EULA: true
   destination:
     server: "https://kubernetes.default.svc"
