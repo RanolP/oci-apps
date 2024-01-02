@@ -14,6 +14,8 @@ spec:
           eula: true
           version: "1.20.4"
           type: "PAPER"
+
+          serviceType: NodePort
           nodePort: 25565
   destination:
     server: "https://kubernetes.default.svc"
