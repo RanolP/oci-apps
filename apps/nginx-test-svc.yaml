@@ -6,6 +6,6 @@ spec:
   selector:
     app: nginx-test
   ports:
-    - port: 80
-      targetPort: 50000
+    - port: 50000
+      targetPort: 80
   type: ClusterIP
